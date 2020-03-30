@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="JQb-JR-8f5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAp-sJ-bAQ" sceneMemberID="firstResponder"/>
+                <viewController id="fpv-T2-Ggg" customClass="ViewController" customModule="er_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TFe-QA-xKe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="1sQ-iN-enf">
+                                <rect key="frame" x="172" y="165" width="76" height="274"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-ic-tcr">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="50"/>
+                                        <color key="backgroundColor" red="0.5540095491" green="0.71859783489999995" blue="0.95015639070000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ABA-TN-XG4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="請選擇">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startSelect:" destination="fpv-T2-Ggg" eventType="touchUpInside" id="8H7-gw-SgE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgp-la-759">
+                                        <rect key="frame" x="0.0" y="56" width="76" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="lGA-3e-R2e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="開心">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaW-Yz-VlI">
+                                        <rect key="frame" x="0.0" y="112" width="76" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Vz9-tp-qhn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="難過">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgB-wV-pn7">
+                                        <rect key="frame" x="0.0" y="168" width="76" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SPp-ek-aZf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="生氣">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I04-Ez-ob4">
+                                        <rect key="frame" x="0.0" y="224" width="76" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="j3l-PV-33H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="焦慮">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rax-jC-dy1"/>
+                    </view>
+                    <connections>
+                        <outlet property="navrous" destination="I04-Ez-ob4" id="4mk-fY-LZQ"/>
+                        <outletCollection property="happy" destination="tgp-la-759" collectionClass="NSMutableArray" id="01M-M1-b8J"/>
+                        <outletCollection property="happy" destination="IaW-Yz-VlI" collectionClass="NSMutableArray" id="tSO-uB-mBa"/>
+                        <outletCollection property="sad" destination="IaW-Yz-VlI" collectionClass="NSMutableArray" id="yxb-hA-wwh"/>
+                        <outletCollection property="angry" destination="hgB-wV-pn7" collectionClass="NSMutableArray" id="PA4-Le-5fb"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+</document>
